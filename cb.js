@@ -65,7 +65,8 @@ function repeatMessage(times, messageCreator){
   for(let i1 = 0; i1 < times.length; i1++){
  console.log(messageCreator(i));
   }
+
 }
-console.log(repeatMessage(1, ));
-console.log(repeatMessage(1));
-console.log(repeatMessage(1));
+// console.log(repeatMessage(1, ));
+// console.log(repeatMessage(1));
+// console.log(repeatMessage(1));

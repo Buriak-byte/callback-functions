@@ -52,21 +52,19 @@ console.log(calculate(10, 5, add));
  console.log(calculate(10, 0, divide)); 
 
  //3
-//  Створіть функцію, яка повторює певну дію задану кількість разів, використовуючи колбек-функцію для генерації повідомлень.
 
+const greetingMessage = () => {
+  return "Привіт, вітаю тебе!!!"
+}
 
-
-// Створіть функцію repeatMessage(times, messageCreator)
-// Створіть цикл for від i = 0 до i < times
-// На кожній ітерації викликайте messageCreator(i)
-// Протестуйте з різними колбеками
 let times = 0;
 function repeatMessage(times, messageCreator){
-  for(let i1 = 0; i1 < times.length; i1++){
- console.log(messageCreator(i));
+  for(let i1 = 0; i1 < times; i1++){
+return messageCreator()
   }
 
 }
-// console.log(repeatMessage(1, ));
-// console.log(repeatMessage(1));
-// console.log(repeatMessage(1));
+
+console.log(repeatMessage(1, greetingMessage));
+console.log(repeatMessage(2, greetingMessage));
+console.log(repeatMessage(3, greetingMessage));
